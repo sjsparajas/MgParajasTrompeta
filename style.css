@@ -1,0 +1,59 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5
+  )),url(images/BackgroundHomepage.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+      }
+
+.navlinks{
+  display: flex;
+  padding: 7px 12px;
+  align-items: center;
+  background: black;
+  padding: 10;
+  margin: 0;
+}
+
+
+li, a {
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.navlinks a:{
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.navlinks a::after{
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0%;
+  background: white;
+  transition: 0.5s;
+}
+
+.navlinks a:hover::after{
+width: 100%;
+}
+
+
+
+
+  
