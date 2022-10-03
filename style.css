@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap');
 
 * {
@@ -18,6 +17,288 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
+}
+
+.navlinks {
+  display: flex;
+  padding: 7px 12px;
+  align-items: center;
+  background: black;
+  margin: 0;
+  color: white;
+  text-align: center;
+  height: 78px;
+}
+
+
+.navbuttons li, a {
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  font-size: 18.5px;
+}
+ 
+
+
+.drpd-m1{
+  position: absolute;
+  background: gray;
+  color:black;
+  z-index: 1;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 0px 15px; 
+  opacity: 0;
+  transition: 1s;
+  visibility: hidden;
+}
+
+.arrow1:focus + .drpd-m1 {
+  opacity: 1;
+  position: absolute;
+  padding: 10px;
+  transition: 1s;
+  visibility: visible;
+}
+
+
+.arrow1:focus {
+  transform: rotate(90deg);
+  transition: transform 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.arrow1{
+  transition: transform 0.5s;
+  vertical-align: text-top;
+  background: black;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  margin-left: -9px;
+  margin-top: -2px;
+}
+
+.drpd-m1 p a:hover{
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  width: 130px;
+}
+
+.drpd-m2{
+  position: absolute;
+  background: gray;
+  color:black;
+  z-index: 1;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 0px 15px; 
+  opacity: 0;
+  transition: 1s;
+  visibility: hidden;
+}
+
+.arrow2:focus + .drpd-m2 {
+  opacity: 1;
+  position: absolute;
+  padding: 10px;
+  transition: 1s;
+  visibility: visible;
+}
+
+.arrow2:focus {
+  transform: rotate(90deg);
+  transition: transform 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.arrow2{
+  transition: transform 0.5s;
+  vertical-align: text-top;
+  background: black;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  margin-left: -9px;
+  margin-top: -2px;
+}
+
+.drpd-m2 p a:hover{
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  width: 130px;
+}
+
+.drpd-m3{
+  position: absolute;
+  background: gray;
+  color:black;
+  z-index: 1;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 0px 15px; 
+  opacity: 0;
+  transition: 1s;
+  visibility: hidden;
+}
+
+.arrow3:focus + .drpd-m3 {
+  opacity: 1;
+  position: absolute;
+  padding: 10px;
+  transition: 1s;
+  visibility: visible;
+}
+
+.arrow3:focus {
+  transform: rotate(90deg);
+  transition: transform 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.arrow3 {
+  transition: transform 0.5s;
+  vertical-align: text-top;
+  background: black;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  margin-left: -9px;
+  margin-top: -2px;
+}
+
+.drpd-m3 p a:hover{
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  width: 130px;
+}
+
+.drpd-m4{
+  position: absolute;
+  background: gray;
+  color:black;
+  z-index: 1;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 0px 15px; 
+  opacity: 0;
+  transition: 1s;
+  visibility: hidden;
+}
+
+.arrow4:focus + .drpd-m4 {
+  opacity: 1;
+  position: absolute;
+  padding: 10px;
+  transition: 1s;
+  visibility: visible;
+}
+
+.arrow4:focus {
+  transform: rotate(90deg);
+  transition: transform 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.arrow4{
+  transition: transform 0.5s;
+  vertical-align: text-top;
+  background: black;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  margin-left: -9px;
+  margin-top: -2px;
+}
+
+.drpd-m4 p a:hover{
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  width: 130px;
+}
+
+.drpd-m5{
+  position: absolute;
+  background: gray;
+  color:black;
+  z-index: 1;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 0px 15px; 
+  opacity: 0;
+  transition: 1s;
+  visibility: hidden;
+}
+
+.arrow5:focus + .drpd-m5 {
+  opacity: 1;
+  position: absolute;
+  padding: 10px;
+  transition: 1s;
+  visibility: visible;
+}
+
+.arrow5:focus {
+  transform: rotate(90deg);
+  transition: transform 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.arrow5{
+  transition: transform 0.5s;
+  vertical-align: text-top;
+  background: black;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  margin-left: -9px;
+  margin-top: -2px;
+}
+
+.drpd-m5 p a:hover{
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  width: 130px;
+}
+
+.navlinks ul li a.navbutton::after {
+  content: '';
+  position: relative;
+  bottom: -5px;
+  display: block;
+  height: 1.5px;
+  width: 0%;
+  background: white;
+  transition: 0.5s;
+  margin: auto;
+}
+
+.navlinks ul li a.navbutton:hover::after {
+  width: 100%;
+}
+
+.navlinks a.navbutton {
+  transition: 1s;
+}
+
+.navlinks a.navbutton:hover {
+  font-size: 20px;
+  transition: 1s;
+  font-weight: 500;
 }
 
 .home {
@@ -278,5 +559,5 @@ div.Footerlist li:hover{
 footer a{
   color: white;
   padding: 0px 0px 5px 5px;
-} 
+}
   
