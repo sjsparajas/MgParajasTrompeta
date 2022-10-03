@@ -1,56 +1,23 @@
-  html, body {
-  height: 105%;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap');
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+html, body {
+  height: 140%;
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
 }
+
 body {
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5
-  )),url(images/BackgroundHomepage.jpg);
+  )),url(../images/BackgroundHomepage.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
-      }
-
-.navlinks {
-  display: flex;
-  padding: 7px 12px;
-  align-items: center;
-  background: black;
-  padding: 10;
-  margin: 0;
-}
-
-
-li, a {
-  list-style-type: none;
-  display: inline-block;
-  padding: 8px;
-  margin: 0;
-  color: white;
-  text-decoration: none;
-  position: relative;
-}
-
-.navlinks a: {
-  color: white;
-  padding: 10px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.navlinks a::after {
-  content: '';
-  display: block;
-  height: 1px;
-  width: 0%;
-  background: white;
-  transition: 0.5s;
-}
-
-.navlinks a:hover::after {
-  width: 100%;
 }
 
 .home {
@@ -70,13 +37,105 @@ li, a {
   border-radius: 26px;
   text-align: center;
   padding: 0;
+  padding-bottom: 20px;
+}
+
+input {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 500px;
+  height: 35px;
+  left: 800px;
+  top: 97px;
+  margin-top: 10px;
+
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.aboutus {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 503px;
+  height: 385px;
+  left: 39px;
+  top: 602px;
+
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 10px;
 }
 
 .astrinity {
+  box-sizing: border-box;
+
   position: absolute;
-  width: 503px;
+  width: 750px;
+  height: 365px;
+  left: 565px;
+  top: 157px;
+
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 10px;
+}
+
+.astropedia {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 750px;
+  height: 244px;
+  left: 565px;
+  top: 540px;
+
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 10px;
+}
+
+.socials {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 750px;
+  height: 185px;
+  left: 565px;
+  top: 802px;
+
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 10px;
+}
+  
+.h1{
+  font-weight: 900;
+}
+
+.border1 {
+  position: absolute;
+  width: 470px;
   height: 85px;
-  left: 33px;
+  left: 34px;
   top: 152.5px;
   margin-top: 10px;
 
@@ -89,18 +148,135 @@ li, a {
   padding: 0;
 }
 
-footer {
-  display: block;
-  position: fixed;
-  left: 0;
-  bottom: 0px;
-  margin-top: 20px;
-  padding: 5px;
-  width: 100%;
-  height: 100px;
-  background-color: black;
-  color: white;
+.border2 {
+  position: absolute;
+  width: 470px;
+  height: 90px;
+  left: 34px;
+  top: 264.5px;
+
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  text-align: center;
+  padding: 0;
+}
+
+.border3 {
+  position: absolute;
+  width: 470px;
+  height: 90px;
+  left: 34px;
+  top: 373.5px;
+
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  text-align: center;
+  padding: 0;
+}
+
+.border4 {
+  position: absolute;
+  width: 470px;
+  height: 90px;
+  left: 34px;
+  top: 485.5px;
+
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  text-align: center;
+  padding: 0;
 }
 
 
+footer {
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding:0px;
+  width: 100%;
+  height: 220px;
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+}
+
+
+div.column{
+  display: inline-block;
+  padding: 20px 120px 0px;
+  position: relative ;
+}
+div.column h3, p{
+  position: relative;
+}
+
+
+#footercolumn1{
+  padding-left: 240px;
+}
+
+div.column h3{
+  text-align: center;
+}
+
+div.Footerlist p{
+  text-align: center;
+}
+
+div.Footerlist a::after {
+  content: '';
+  position: relative;
+  left: 0px;
+  bottom: -5px;
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: white;
+  transition: 0.5s;
+  margin: auto;
+}
+
+div.Footerlist a:hover::after {
+  width: 100%;
+}
+
+
+div.Footerlist a, li{
+  text-decoration: none;
+  font-size: 13px;
+  padding: 5px;
+  transition: 1s;
+}
+
+#contributors h3, li{
+  padding: 10px 0px 0px 0px;
+  
+}
+
+div.Footerlist a:hover{
+  font-size: 17.5px;
+  transition: 1s;
+  font-weight: bolder;
+}
+
+div.Footerlist li:hover{
+  font-size: 17.5px;
+  transition: 1s;
+  font-weight: bolder;
+}
+
+footer a{
+  color: white;
+  padding: 0px 0px 5px 5px;
+}
   
