@@ -1,7 +1,10 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap');
 
 * {
   font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  color: white;
 }
 
 html, body {
@@ -27,9 +30,9 @@ body {
   margin: 0;
   color: white;
   text-align: center;
-  height: 78px;
+  height: 100px;
+  width: 100%;
 }
-
 
 .navbuttons li, a {
   list-style-type: none;
@@ -42,20 +45,20 @@ body {
   font-size: 18.5px;
 }
  
-
-
 .drpd-m1{
   position: absolute;
-  background: gray;
-  color:black;
+  background: black;
+  color: white;
   z-index: 1;
-  border: 1px solid;
+  border: 1px solid white;
   border-radius: 15px;
   padding: 0px 15px; 
   opacity: 0;
   transition: 1s;
   visibility: hidden;
+  width: 200px;
 }
+
 
 .arrow1:focus + .drpd-m1 {
   opacity: 1;
@@ -64,7 +67,6 @@ body {
   transition: 1s;
   visibility: visible;
 }
-
 
 .arrow1:focus {
   transform: rotate(90deg);
@@ -81,22 +83,23 @@ body {
   font-size: 15px;
   position: relative;
   margin-left: -9px;
-  margin-top: -2px;
+  display: inline;
+  border: none;
 }
 
 .drpd-m1 p a:hover{
   color: black;
   background-color: white;
   border-radius: 10px;
-  width: 130px;
 }
+
 
 .drpd-m2{
   position: absolute;
-  background: gray;
-  color:black;
+  background: black;
+  color: white;
   z-index: 1;
-  border: 1px solid;
+  border: 1px solid white;
   border-radius: 15px;
   padding: 0px 15px; 
   opacity: 0;
@@ -127,7 +130,8 @@ body {
   font-size: 15px;
   position: relative;
   margin-left: -9px;
-  margin-top: -2px;
+  display:inline-block;
+  border: none;
 }
 
 .drpd-m2 p a:hover{
@@ -139,10 +143,10 @@ body {
 
 .drpd-m3{
   position: absolute;
-  background: gray;
-  color:black;
+  background: black;
+  color: white;
   z-index: 1;
-  border: 1px solid;
+  border: 1px solid white;
   border-radius: 15px;
   padding: 0px 15px; 
   opacity: 0;
@@ -173,7 +177,8 @@ body {
   font-size: 15px;
   position: relative;
   margin-left: -9px;
-  margin-top: -2px;
+  display:inline-block;
+  border: none;
 }
 
 .drpd-m3 p a:hover{
@@ -185,10 +190,10 @@ body {
 
 .drpd-m4{
   position: absolute;
-  background: gray;
-  color:black;
+  background: black;
+  color: white;
   z-index: 1;
-  border: 1px solid;
+  border: 1px solid white;
   border-radius: 15px;
   padding: 0px 15px; 
   opacity: 0;
@@ -219,7 +224,8 @@ body {
   font-size: 15px;
   position: relative;
   margin-left: -9px;
-  margin-top: -2px;
+  display:inline-block;
+  border: none;
 }
 
 .drpd-m4 p a:hover{
@@ -231,10 +237,10 @@ body {
 
 .drpd-m5{
   position: absolute;
-  background: gray;
-  color:black;
+  background: black;
+  color: white;
   z-index: 1;
-  border: 1px solid;
+  border: 1px solid white;
   border-radius: 15px;
   padding: 0px 15px; 
   opacity: 0;
@@ -265,7 +271,8 @@ body {
   font-size: 15px;
   position: relative;
   margin-left: -9px;
-  margin-top: -2px;
+  display:inline-block;
+  border: none;
 }
 
 .drpd-m5 p a:hover{
@@ -301,27 +308,72 @@ body {
   font-weight: 500;
 }
 
-.home {
+#Breadcrumbs {
   box-sizing: border-box;
 
   position: absolute;
   width: 700px;
-  height: 35px;
+  height: 40px;
   left: 34px;
-  top: 97px;
+  top: 93px;
   margin-top: 10px;
 
-  background: #FFFFFF;
+  background: black;
   mix-blend-mode: normal;
-  border: 1px solid #000000;
+  border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
-  text-align: center;
-  padding: 0;
-  padding-bottom: 20px;
 }
 
-input {
+div#Breadcrumbs ul li{
+  color:black;
+  position: relative;
+  font-size: 15px;
+  text-align: center;
+  list-style-type: none;
+  bottom: 18px;
+  right: 10px;
+  padding: 0px;
+  display: inline-block;
+  
+}
+
+div#Breadcrumbs li+li:before {
+  padding: 8px;
+  color: white;
+  content: '\003E''\003E''\003E';
+  position: relative;
+  bottom: 1px;
+}
+
+  div#Breadcrumbs ul li a::after {
+  content: '';
+  position: relative;
+  bottom: -1px;
+  display: block;
+  height: 0.5px;
+  width: 0%;
+  background: white;
+  transition: 0.5s;
+  margin: auto;
+}
+
+div#Breadcrumbs ul li a:hover::after {
+  width: 100%;
+}
+
+div#Breadcrumbs a {
+  transition: 1s;
+}
+
+div#Breadcrumbs a:hover {
+  font-size: 20px;
+  transition: 1s;
+  font-weight: 500;
+  color:#E1D9D1;
+}
+
+input{
   box-sizing: border-box;
 
   position: absolute;
@@ -331,14 +383,17 @@ input {
   top: 97px;
   margin-top: 10px;
 
-  background: #FFFFFF;
+  background: black;
   mix-blend-mode: normal;
-  border: 1px solid #000000;
+  border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
   text-align: left;
   padding-left: 10px;
+
+    font-size: 15px;
 }
+
 
 .aboutus {
   box-sizing: border-box;
@@ -349,9 +404,9 @@ input {
   left: 39px;
   top: 602px;
 
-  background: #FFFFFF;
+  background: black;
   mix-blend-mode: normal;
-  border: 1px solid #000000;
+  border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
   padding: 10px;
@@ -366,9 +421,9 @@ input {
   left: 565px;
   top: 157px;
 
-  background: #FFFFFF;
+  background: black;
   mix-blend-mode: normal;
-  border: 1px solid #000000;
+  border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
   padding: 10px;
@@ -383,9 +438,9 @@ input {
   left: 565px;
   top: 540px;
 
-  background: #FFFFFF;
+  background: black;
   mix-blend-mode: normal;
-  border: 1px solid #000000;
+  border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
   padding: 10px;
@@ -400,9 +455,9 @@ input {
   left: 565px;
   top: 802px;
 
-  background: #FFFFFF;
+  background: black;
   mix-blend-mode: normal;
-  border: 1px solid #000000;
+  border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
   padding: 10px;
@@ -420,9 +475,9 @@ input {
   top: 152.5px;
   margin-top: 10px;
 
-  background: #FFFFFF;
+  background: black;
   mix-blend-mode: normal;
-  border: 1px solid #000000;
+  border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
   text-align: center;
@@ -436,9 +491,9 @@ input {
   left: 34px;
   top: 264.5px;
 
-  background: #FFFFFF;
+  background: black;
   mix-blend-mode: normal;
-  border: 1px solid #000000;
+  border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
   text-align: center;
@@ -452,9 +507,9 @@ input {
   left: 34px;
   top: 373.5px;
 
-  background: #FFFFFF;
+  background: black;
   mix-blend-mode: normal;
-  border: 1px solid #000000;
+  border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
   text-align: center;
@@ -468,9 +523,9 @@ input {
   left: 34px;
   top: 485.5px;
 
-  background: #FFFFFF;
+  background: black;
   mix-blend-mode: normal;
-  border: 1px solid #000000;
+  border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
   text-align: center;
@@ -485,7 +540,6 @@ footer {
   bottom: 0px;
   padding:0px;
   width: 100%;
-  height: 220px;
   background-color: black;
   color: white;
   opacity: 0.9;
@@ -496,11 +550,13 @@ div.column{
   display: inline-block;
   padding: 20px 120px 0px;
   position: relative ;
-}
-div.column h3, p{
-  position: relative;
-}
 
+}
+div.column h3, p, a{
+  position: relative;
+  justify-content: space-evenly;
+  display: inline-block;
+}
 
 #footercolumn1{
   padding-left: 240px;
@@ -510,7 +566,7 @@ div.column h3{
   text-align: center;
 }
 
-div.Footerlist p{
+div.Footerlist p, ul{
   text-align: center;
 }
 
@@ -532,17 +588,13 @@ div.Footerlist a:hover::after {
 }
 
 
-div.Footerlist a, li{
+div.Footerlist a, p{
   text-decoration: none;
   font-size: 13px;
   padding: 5px;
   transition: 1s;
 }
 
-#contributors h3, li{
-  padding: 10px 0px 0px 0px;
-  
-}
 
 div.Footerlist a:hover{
   font-size: 17.5px;
@@ -556,7 +608,7 @@ div.Footerlist li:hover{
   font-weight: bolder;
 }
 
-footer a{
+footer a, p li{
   color: white;
   padding: 0px 0px 5px 5px;
 }
