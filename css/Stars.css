@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap');
 
 * {
@@ -8,7 +7,7 @@
 }
 
 html, body {
-  height: 140%;
+  height: 200vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -19,7 +18,14 @@ body {
   )),url(../images/BackgroundHomepage.jpg);
   background-position: center;
   background-size: cover;
+}
+
+#flexbox{
   position: relative;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .navlinks {
@@ -30,7 +36,7 @@ body {
   margin: 0;
   color: white;
   text-align: center;
-  height: 100px;
+  height: 7.5%;
   width: 100%;
 }
 
@@ -44,7 +50,7 @@ body {
   position: relative;
   font-size: 18.5px;
 }
- 
+
 .drpd-m1{
   position: absolute;
   background: black;
@@ -91,6 +97,7 @@ body {
   color: black;
   background-color: white;
   border-radius: 10px;
+  width: 150px;
 }
 
 
@@ -105,6 +112,7 @@ body {
   opacity: 0;
   transition: 1s;
   visibility: hidden;
+  width: 200px;
 }
 
 .arrow2:focus + .drpd-m2 {
@@ -138,7 +146,7 @@ body {
   color: black;
   background-color: white;
   border-radius: 10px;
-  width: 130px;
+  width: 150px;
 }
 
 .drpd-m3{
@@ -152,6 +160,7 @@ body {
   opacity: 0;
   transition: 1s;
   visibility: hidden;
+  width: 225px;
 }
 
 .arrow3:focus + .drpd-m3 {
@@ -185,7 +194,7 @@ body {
   color: black;
   background-color: white;
   border-radius: 10px;
-  width: 130px;
+  width: 170px;
 }
 
 .drpd-m4{
@@ -199,6 +208,7 @@ body {
   opacity: 0;
   transition: 1s;
   visibility: hidden;
+  width: 200px;
 }
 
 .arrow4:focus + .drpd-m4 {
@@ -232,7 +242,7 @@ body {
   color: black;
   background-color: white;
   border-radius: 10px;
-  width: 130px;
+  width: 150px;
 }
 
 .drpd-m5{
@@ -246,6 +256,7 @@ body {
   opacity: 0;
   transition: 1s;
   visibility: hidden;
+  width: 200px;
 }
 
 .arrow5:focus + .drpd-m5 {
@@ -279,7 +290,7 @@ body {
   color: black;
   background-color: white;
   border-radius: 10px;
-  width: 130px;
+  width: 150px;
 }
 
 .navlinks ul li a.navbutton::after {
@@ -394,179 +405,219 @@ input{
     font-size: 15px;
 }
 
-
-.aboutus {
+.OurStar {
   box-sizing: border-box;
 
   position: absolute;
-  width: 503px;
-  height: 385px;
-  left: 39px;
-  top: 602px;
-
-  background: black;
-  mix-blend-mode: normal;
-  border: 1px solid white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-  padding: 10px;
-}
-
-.astrinity {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 750px;
-  height: 365px;
-  left: 565px;
-  top: 157px;
-
-  background: black;
-  mix-blend-mode: normal;
-  border: 1px solid white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-  padding: 10px;
-}
-
-.astropedia {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 750px;
-  height: 244px;
-  left: 565px;
-  top: 540px;
-
-  background: black;
-  mix-blend-mode: normal;
-  border: 1px solid white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-  padding: 10px;
-}
-
-.socials {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 750px;
-  height: 185px;
-  left: 565px;
-  top: 802px;
-
-  background: black;
-  mix-blend-mode: normal;
-  border: 1px solid white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-  padding: 10px;
-}
+  width: 479px;
+  height: 97px;
+  left: 34px;
+  top: 156px;
   
-.h1{
-  font-weight: 900;
-}
-
-.border1 {
-  position: absolute;
-  width: 470px;
-  height: 85px;
-  left: 34px;
-  top: 152.5px;
-  margin-top: 10px;
-
   background: black;
   mix-blend-mode: normal;
   border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
+  padding: 10px;
   text-align: center;
-  padding: 0;
+  font-size: 20px;
+  font-weight: 200;
 }
 
-.border2 {
+.LifeofaStar {
+  box-sizing: border-box;
+  
   position: absolute;
-  width: 470px;
-  height: 90px;
+  width: 479px;
+  height: 97px;
   left: 34px;
-  top: 264.5px;
-
+  top: 270px;
+  
   background: black;
   mix-blend-mode: normal;
   border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
+  padding: 10px;
   text-align: center;
-  padding: 0;
+  font-size: 20px;
+  font-weight: 200;
 }
 
-.border3 {
+.ClassificationOfStars{
+  box-sizing: border-box;
+  
   position: absolute;
-  width: 470px;
-  height: 90px;
+  width: 479px;
+  height: 97px;
   left: 34px;
-  top: 373.5px;
-
+  top: 387px;
+  
   background: black;
   mix-blend-mode: normal;
   border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
+  padding: 10px;
   text-align: center;
-  padding: 0;
+  font-size: 20px;
+  font-weight: 200;
 }
 
-.border4 {
+.TheBrightestStars{
+  box-sizing: border-box;
+  
   position: absolute;
-  width: 470px;
-  height: 90px;
+  width: 479px;
+  height: 97px;
   left: 34px;
-  top: 485.5px;
-
+  top: 501px;
+  
   background: black;
   mix-blend-mode: normal;
   border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
+  padding: 10px;
   text-align: center;
-  padding: 0;
+  font-size: 20px;
+  font-weight: 200;
 }
 
+.HallofStars{
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 479px;
+  height: 97px;
+  left: 34px;
+  top: 620px;
+  
+  background: black;
+  mix-blend-mode: normal;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.Content h4{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.Starlist{
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 479px;
+  height: 207px;
+  left: 34px;
+  top: 740px;
+  
+  background: black;
+  mix-blend-mode: normal;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.Stars2{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 770px;
+  height: 442px;
+  left: 529px;
+  top: 156px;
+  
+  background: black;
+  mix-blend-mode: normal;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 15px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+#Stars2-Subtitle{
+  font-weight: 400;
+  position: relative;
+  bottom: 20px;  
+}
+
+.astropedia2{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 770px;
+  height: 300px;
+  left: 529px;
+  top: 641px;
+  
+  background: black;
+  mix-blend-mode: normal;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+#Astropedia2-Subtitle{
+  font-weight: 400;
+  position: relative;
+  bottom: 20px;  
+}
 
 footer {
   display: block;
   position: absolute;
   left: 0px;
   bottom: 0px;
-  padding:0px;
+  padding: 0px;
   width: 100%;
-  height: 220px;
+  height: 20%;
   background-color: black;
   color: white;
   opacity: 0.9;
+  overflow: auto;
+  font-size: 25px;
 }
 
 
 div.column{
-  display: inline-block;
-  padding: 20px 120px 0px;
-  position: relative ;
-}
-div.column h3, p{
-  position: relative;
-}
-
-
-#footercolumn1{
-  padding-left: 240px;
+  padding-top: 1.5%;
+  float: left;
+  width: 33%;
 }
 
 div.column h3{
   text-align: center;
 }
 
-div.Footerlist p{
+div.Footerlist p, li{
   text-align: center;
+}
+
+#copyright{
+  float: left;
+  clear: left;
+  overflow: auto;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  bottom: 0;
+  font-size: 15px;
 }
 
 div.Footerlist a::after {
@@ -589,7 +640,7 @@ div.Footerlist a:hover::after {
 
 div.Footerlist a, li{
   text-decoration: none;
-  font-size: 13px;
+  font-size: 15px;
   padding: 5px;
   transition: 1s;
 }
@@ -600,15 +651,23 @@ div.Footerlist a, li{
 }
 
 div.Footerlist a:hover{
-  font-size: 17.5px;
+  font-size: 20px;
   transition: 1s;
   font-weight: bolder;
 }
 
 div.Footerlist li:hover{
-  font-size: 17.5px;
+  font-size: 20px;
   transition: 1s;
   font-weight: bolder;
+}
+
+.Footerlist li{
+  transition: 1s;
+  list-style-type: none;
+  padding: 5px;
+  position: relative;
+  right: 20px;
 }
 
 footer a{
