@@ -7,10 +7,11 @@
 }
 
 html, body {
-  height: 200vh;
+  height: 187.5vh;
   width: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,6 +19,31 @@ body {
   )),url(../images/BackgroundHomepage.jpg);
   background-position: center;
   background-size: cover;
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background:  black; 
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #111111; 
+  border: 1px solid  white; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2e2e2e; 
+}
+
+::-webkit-scrollbar-corner{
+  background: black;
 }
 
 #flexbox{
@@ -29,8 +55,8 @@ body {
 }
 
 .navlinks {
+  position: relative;
   display: flex;
-  padding: 7px 12px;
   align-items: center;
   background: black;
   margin: 0;
@@ -40,6 +66,67 @@ body {
   width: 100%;
 }
 
+.navlinks img{
+  float: left;
+  width: 25%;
+}
+
+.navbuttons{
+  display: inline;
+  position: relative;
+  float: left;
+  width: 70%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbutton{
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+
+.navbuttons ul{
+  margin: 0px;
+}
+
+.navbuttons li{
+  float: left;
+}
+
+.navbuttons li a, button{
+  text-align: center;
+}
+
+#navlinks1{
+  position: relative;
+  width: 18%;
+  float: left;
+}
+
+#navlinks2{
+  position: relative;
+  width: 23%;
+  float: left;
+}
+
+#navlinks3{
+  position: relative;
+  width: 18%;
+  float: left;
+}
+
+#navlinks4{
+  position: relative;
+  width: 23%;
+  float: left;
+}
+
+#navlinks5{
+  position: relative;
+  width: 18%;
+  float: left;
+}
 .navbuttons li, a {
   list-style-type: none;
   display: inline-block;
@@ -50,6 +137,8 @@ body {
   position: relative;
   font-size: 18.5px;
 }
+
+
 
 .drpd-m1{
   position: absolute;
@@ -63,6 +152,7 @@ body {
   transition: 1s;
   visibility: hidden;
   width: 200px;
+  overflow: visible;
 }
 
 
@@ -82,15 +172,14 @@ body {
 
 .arrow1{
   transition: transform 0.5s;
-  vertical-align: text-top;
   background: black;
   color: white;
-  font-weight: 600;
   font-size: 15px;
+  margin-left: -5px;
   position: relative;
-  margin-left: -9px;
   display: inline;
   border: none;
+  white-space: nowrap;
 }
 
 .drpd-m1 p a:hover{
@@ -131,14 +220,12 @@ body {
 
 .arrow2{
   transition: transform 0.5s;
-  vertical-align: text-top;
   background: black;
   color: white;
-  font-weight: 600;
   font-size: 15px;
+  margin-left: -5px;
   position: relative;
-  margin-left: -9px;
-  display:inline-block;
+  display:inline;
   border: none;
 }
 
@@ -179,14 +266,12 @@ body {
 
 .arrow3 {
   transition: transform 0.5s;
-  vertical-align: text-top;
   background: black;
   color: white;
-  font-weight: 600;
   font-size: 15px;
+  margin-left: -5px;
   position: relative;
-  margin-left: -9px;
-  display:inline-block;
+  display:inline;
   border: none;
 }
 
@@ -227,14 +312,12 @@ body {
 
 .arrow4{
   transition: transform 0.5s;
-  vertical-align: text-top;
   background: black;
   color: white;
-  font-weight: 600;
   font-size: 15px;
+  margin-left: -5px;
   position: relative;
-  margin-left: -9px;
-  display:inline-block;
+  display:inline;
   border: none;
 }
 
@@ -275,14 +358,12 @@ body {
 
 .arrow5{
   transition: transform 0.5s;
-  vertical-align: text-top;
   background: black;
   color: white;
-  font-weight: 600;
   font-size: 15px;
+  margin-left: -5px;
   position: relative;
-  margin-left: -9px;
-  display:inline-block;
+  display:inline;
   border: none;
 }
 
@@ -319,6 +400,13 @@ body {
   font-weight: 500;
 }
 
+.Content{
+  width: 100%;
+  height: 72.5%;
+  position: relative;
+  overflow: auto;
+}
+
 #Breadcrumbs {
   box-sizing: border-box;
 
@@ -326,7 +414,7 @@ body {
   width: 700px;
   height: 40px;
   left: 34px;
-  top: 93px;
+  top: 0px;
   margin-top: 10px;
 
   background: black;
@@ -384,6 +472,7 @@ div#Breadcrumbs a:hover {
   color:#E1D9D1;
 }
 
+
 input{
   box-sizing: border-box;
 
@@ -391,7 +480,7 @@ input{
   width: 500px;
   height: 35px;
   left: 800px;
-  top: 97px;
+  top: 4px;
   margin-top: 10px;
 
   background: black;
@@ -405,168 +494,6 @@ input{
   font-size: 15px;
 }
 
-
-.aboutus {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 503px;
-  height: 385px;
-  left: 39px;
-  top: 602px;
-
-  background: black;
-  mix-blend-mode: normal;
-  border: 1px solid white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-  padding: 15px;
-
-  font-size: 20px;
-  text-align: justify;
-}
-
-.astrinity {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 750px;
-  height: 365px;
-  left: 565px;
-  top: 157px;
-
-  background: black;
-  mix-blend-mode: normal;
-  border: 1px solid white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-  padding: 15px;
-
-  font-size: 20px;
-  text-align: justify;
-}
-
-.astropedia {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 750px;
-  height: 244px;
-  left: 565px;
-  top: 540px;
-
-  background: black;
-  mix-blend-mode: normal;
-  border: 1px solid white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-  padding: 15px;
-
-  font-size: 20px;
-  text-align: justify;
-}
-
-#Astropedia-subtitle{
-  font-weight: 400;
-  position: relative;
-  bottom: 20px;
-}
-
-.socials {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 750px;
-  height: 185px;
-  left: 565px;
-  top: 802px;
-
-  background: black;
-  mix-blend-mode: normal;
-  border: 1px solid white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-  padding: 10px;
-}
-  
-.h1{
-  font-weight: 900;
-}
-
-.border1 {
-  position: absolute;
-  width: 470px;
-  height: 85px;
-  left: 34px;
-  top: 152.5px;
-  margin-top: 10px;
-
-  background: black;
-  mix-blend-mode: normal;
-  border: 1px solid white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-  text-align: center;
-  padding: 0;
-  font-size: 20px;
-  font-weight: 200;
-}
-
-.border2 {
-  position: absolute;
-  width: 470px;
-  height: 90px;
-  left: 34px;
-  top: 264.5px;
-
-  background: black;
-  mix-blend-mode: normal;
-  border: 1px solid white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-  text-align: center;
-  padding: 0;
-  font-size: 20px;
-  font-weight: 200;
-}
-
-.border3 {
-  position: absolute;
-  width: 470px;
-  height: 90px;
-  left: 34px;
-  top: 373.5px;
-
-  background: black;
-  mix-blend-mode: normal;
-  border: 1px solid white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-  text-align: center;
-  padding: 0;
-  font-size: 20px;
-  font-weight: 200;
-}
-
-.border4 {
-  position: absolute;
-  width: 470px;
-  height: 90px;
-  left: 34px;
-  top: 485.5px;
-
-  background: black;
-  mix-blend-mode: normal;
-  border: 1px solid white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-  text-align: center;
-  padding: 0;
-  font-size: 20px;
-  font-weight: 200;
-}
-
-
 footer {
   display: block;
   position: absolute;
@@ -577,7 +504,6 @@ footer {
   height: 20%;
   background-color: black;
   color: white;
-  opacity: 0.9;
   overflow: auto;
   font-size: 25px;
 }
@@ -597,14 +523,17 @@ div.Footerlist p, li{
   text-align: center;
 }
 
+div.FooterlistSocials p{
+  text-align: center;
+}
+
 #copyright{
   float: left;
   clear: left;
-  overflow: auto;
   padding: 0px;
   margin: 0px;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   font-size: 15px;
 }
 
@@ -633,9 +562,15 @@ div.Footerlist a, li{
   transition: 1s;
 }
 
+div.FooterlistSocials a{
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  transition: 1s;
+}
+
 #contributors h3, li{
   padding: 10px 0px 0px 0px;
-  
 }
 
 div.Footerlist a:hover{
@@ -646,6 +581,11 @@ div.Footerlist a:hover{
 
 div.Footerlist li:hover{
   font-size: 20px;
+  transition: 1s;
+  font-weight: bolder;
+}
+div.FooterlistSocials a:hover{
+  font-size: 25px;
   transition: 1s;
   font-weight: bolder;
 }
