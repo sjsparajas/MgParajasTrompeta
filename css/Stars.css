@@ -1,408 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap');
 
-* {
-  font-family: "Inter", sans-serif;
-  box-sizing: border-box;
-  color: white;
-}
-
-html, body {
-  height: 200vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5
-  )),url(../images/BackgroundHomepage.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-#flexbox{
-  position: relative;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.navlinks {
-  display: flex;
-  padding: 7px 12px;
-  align-items: center;
-  background: black;
-  margin: 0;
-  color: white;
-  text-align: center;
-  height: 7.5%;
-  width: 100%;
-}
-
-.navbuttons li, a {
-  list-style-type: none;
-  display: inline-block;
-  padding: 8px;
-  margin: 0;
-  color: white;
-  text-decoration: none;
-  position: relative;
-  font-size: 18.5px;
-}
-
-.drpd-m1{
-  position: absolute;
-  background: black;
-  color: white;
-  z-index: 1;
-  border: 1px solid white;
-  border-radius: 15px;
-  padding: 0px 15px; 
-  opacity: 0;
-  transition: 1s;
-  visibility: hidden;
-  width: 200px;
-}
-
-
-.arrow1:focus + .drpd-m1 {
-  opacity: 1;
-  position: absolute;
-  padding: 10px;
-  transition: 1s;
-  visibility: visible;
-}
-
-.arrow1:focus {
-  transform: rotate(90deg);
-  transition: transform 0.5s;
-  transition-timing-function: ease-in-out;
-}
-
-.arrow1{
-  transition: transform 0.5s;
-  vertical-align: text-top;
-  background: black;
-  color: white;
-  font-weight: 600;
-  font-size: 15px;
-  position: relative;
-  margin-left: -9px;
-  display: inline;
-  border: none;
-}
-
-.drpd-m1 p a:hover{
-  color: black;
-  background-color: white;
-  border-radius: 10px;
-  width: 150px;
-}
-
-
-.drpd-m2{
-  position: absolute;
-  background: black;
-  color: white;
-  z-index: 1;
-  border: 1px solid white;
-  border-radius: 15px;
-  padding: 0px 15px; 
-  opacity: 0;
-  transition: 1s;
-  visibility: hidden;
-  width: 200px;
-}
-
-.arrow2:focus + .drpd-m2 {
-  opacity: 1;
-  position: absolute;
-  padding: 10px;
-  transition: 1s;
-  visibility: visible;
-}
-
-.arrow2:focus {
-  transform: rotate(90deg);
-  transition: transform 0.5s;
-  transition-timing-function: ease-in-out;
-}
-
-.arrow2{
-  transition: transform 0.5s;
-  vertical-align: text-top;
-  background: black;
-  color: white;
-  font-weight: 600;
-  font-size: 15px;
-  position: relative;
-  margin-left: -9px;
-  display:inline-block;
-  border: none;
-}
-
-.drpd-m2 p a:hover{
-  color: black;
-  background-color: white;
-  border-radius: 10px;
-  width: 150px;
-}
-
-.drpd-m3{
-  position: absolute;
-  background: black;
-  color: white;
-  z-index: 1;
-  border: 1px solid white;
-  border-radius: 15px;
-  padding: 0px 15px; 
-  opacity: 0;
-  transition: 1s;
-  visibility: hidden;
-  width: 225px;
-}
-
-.arrow3:focus + .drpd-m3 {
-  opacity: 1;
-  position: absolute;
-  padding: 10px;
-  transition: 1s;
-  visibility: visible;
-}
-
-.arrow3:focus {
-  transform: rotate(90deg);
-  transition: transform 0.5s;
-  transition-timing-function: ease-in-out;
-}
-
-.arrow3 {
-  transition: transform 0.5s;
-  vertical-align: text-top;
-  background: black;
-  color: white;
-  font-weight: 600;
-  font-size: 15px;
-  position: relative;
-  margin-left: -9px;
-  display:inline-block;
-  border: none;
-}
-
-.drpd-m3 p a:hover{
-  color: black;
-  background-color: white;
-  border-radius: 10px;
-  width: 170px;
-}
-
-.drpd-m4{
-  position: absolute;
-  background: black;
-  color: white;
-  z-index: 1;
-  border: 1px solid white;
-  border-radius: 15px;
-  padding: 0px 15px; 
-  opacity: 0;
-  transition: 1s;
-  visibility: hidden;
-  width: 200px;
-}
-
-.arrow4:focus + .drpd-m4 {
-  opacity: 1;
-  position: absolute;
-  padding: 10px;
-  transition: 1s;
-  visibility: visible;
-}
-
-.arrow4:focus {
-  transform: rotate(90deg);
-  transition: transform 0.5s;
-  transition-timing-function: ease-in-out;
-}
-
-.arrow4{
-  transition: transform 0.5s;
-  vertical-align: text-top;
-  background: black;
-  color: white;
-  font-weight: 600;
-  font-size: 15px;
-  position: relative;
-  margin-left: -9px;
-  display:inline-block;
-  border: none;
-}
-
-.drpd-m4 p a:hover{
-  color: black;
-  background-color: white;
-  border-radius: 10px;
-  width: 150px;
-}
-
-.drpd-m5{
-  position: absolute;
-  background: black;
-  color: white;
-  z-index: 1;
-  border: 1px solid white;
-  border-radius: 15px;
-  padding: 0px 15px; 
-  opacity: 0;
-  transition: 1s;
-  visibility: hidden;
-  width: 200px;
-}
-
-.arrow5:focus + .drpd-m5 {
-  opacity: 1;
-  position: absolute;
-  padding: 10px;
-  transition: 1s;
-  visibility: visible;
-}
-
-.arrow5:focus {
-  transform: rotate(90deg);
-  transition: transform 0.5s;
-  transition-timing-function: ease-in-out;
-}
-
-.arrow5{
-  transition: transform 0.5s;
-  vertical-align: text-top;
-  background: black;
-  color: white;
-  font-weight: 600;
-  font-size: 15px;
-  position: relative;
-  margin-left: -9px;
-  display:inline-block;
-  border: none;
-}
-
-.drpd-m5 p a:hover{
-  color: black;
-  background-color: white;
-  border-radius: 10px;
-  width: 150px;
-}
-
-.navlinks ul li a.navbutton::after {
-  content: '';
-  position: relative;
-  bottom: -5px;
-  display: block;
-  height: 1.5px;
-  width: 0%;
-  background: white;
-  transition: 0.5s;
-  margin: auto;
-}
-
-.navlinks ul li a.navbutton:hover::after {
-  width: 100%;
-}
-
-.navlinks a.navbutton {
-  transition: 1s;
-}
-
-.navlinks a.navbutton:hover {
-  font-size: 20px;
-  transition: 1s;
-  font-weight: 500;
-}
-
-#Breadcrumbs {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 700px;
-  height: 40px;
-  left: 34px;
-  top: 93px;
-  margin-top: 10px;
-
-  background: black;
-  mix-blend-mode: normal;
-  border: 1px solid white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-}
-
-div#Breadcrumbs ul li{
-  color:black;
-  position: relative;
-  font-size: 15px;
-  text-align: center;
-  list-style-type: none;
-  bottom: 18px;
-  right: 10px;
-  padding: 0px;
-  display: inline-block;
-  
-}
-
-div#Breadcrumbs li+li:before {
-  padding: 8px;
-  color: white;
-  content: '\003E''\003E''\003E';
-  position: relative;
-  bottom: 1px;
-}
-
-  div#Breadcrumbs ul li a::after {
-  content: '';
-  position: relative;
-  bottom: -1px;
-  display: block;
-  height: 0.5px;
-  width: 0%;
-  background: white;
-  transition: 0.5s;
-  margin: auto;
-}
-
-div#Breadcrumbs ul li a:hover::after {
-  width: 100%;
-}
-
-div#Breadcrumbs a {
-  transition: 1s;
-}
-
-div#Breadcrumbs a:hover {
-  font-size: 20px;
-  transition: 1s;
-  font-weight: 500;
-  color:#E1D9D1;
-}
-
-input{
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 500px;
-  height: 35px;
-  left: 800px;
-  top: 97px;
-  margin-top: 10px;
-
-  background: black;
-  mix-blend-mode: normal;
-  border: 1px solid white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-  text-align: left;
-  padding-left: 10px;
-
-    font-size: 15px;
+.h1{
+  font-weight: 900;
 }
 
 .OurStar {
@@ -412,7 +10,7 @@ input{
   width: 479px;
   height: 97px;
   left: 34px;
-  top: 156px;
+  top: 73px;
   
   background: black;
   mix-blend-mode: normal;
@@ -423,6 +21,19 @@ input{
   text-align: center;
   font-size: 20px;
   font-weight: 200;
+  transition: 1s;
+}
+
+.OurStar:hover{
+  transform: scale(1.05);
+  transition: 1s;
+  border: 3px solid black;
+  background: white;
+}
+
+.OurStar:hover p{
+  color: black;
+  transition: ease-in-out 1s;
 }
 
 .LifeofaStar {
@@ -432,7 +43,7 @@ input{
   width: 479px;
   height: 97px;
   left: 34px;
-  top: 270px;
+  top: 197px;
   
   background: black;
   mix-blend-mode: normal;
@@ -443,6 +54,19 @@ input{
   text-align: center;
   font-size: 20px;
   font-weight: 200;
+  transition: 1s;
+}
+
+.LifeofaStar:hover{
+  transform: scale(1.05);
+  transition: 1s;
+  border: 3px solid black;
+  background: white;
+}
+
+.LifeofaStar:hover p{
+  color: black;
+  transition: ease-in-out 1s;
 }
 
 .ClassificationOfStars{
@@ -452,7 +76,7 @@ input{
   width: 479px;
   height: 97px;
   left: 34px;
-  top: 387px;
+  top: 324px;
   
   background: black;
   mix-blend-mode: normal;
@@ -463,6 +87,19 @@ input{
   text-align: center;
   font-size: 20px;
   font-weight: 200;
+  transition: 1s;
+}
+
+.ClassificationOfStars:hover{
+  transform: scale(1.05);
+  transition: 1s;
+  border: 3px solid black;
+  background: white;
+}
+
+.ClassificationOfStars:hover p{
+  color: black;
+  transition: ease-in-out 1s;
 }
 
 .TheBrightestStars{
@@ -472,7 +109,7 @@ input{
   width: 479px;
   height: 97px;
   left: 34px;
-  top: 501px;
+  top: 448px;
   
   background: black;
   mix-blend-mode: normal;
@@ -483,6 +120,19 @@ input{
   text-align: center;
   font-size: 20px;
   font-weight: 200;
+  transition: 1s;
+}
+
+.TheBrightestStars:hover{
+  transform: scale(1.05);
+  transition: 1s;
+  border: 3px solid black;
+  background: white;
+}
+
+.TheBrightestStars:hover p{
+  color: black;
+  transition: ease-in-out 1s;
 }
 
 .HallofStars{
@@ -492,7 +142,7 @@ input{
   width: 479px;
   height: 97px;
   left: 34px;
-  top: 620px;
+  top: 577px;
   
   background: black;
   mix-blend-mode: normal;
@@ -503,6 +153,19 @@ input{
   text-align: center;
   font-size: 20px;
   font-weight: 200;
+  transition: 1s;
+}
+
+.HallofStars:hover{
+  transform: scale(1.05);
+  transition: 1s;
+  border: 3px solid black;
+  background: white;
+}
+
+.HallofStars:hover p{
+  color: black;
+  transition: ease-in-out 1s;
 }
 
 .Content h4{
@@ -518,16 +181,22 @@ input{
   width: 479px;
   height: 207px;
   left: 34px;
-  top: 740px;
+  top: 707px;
   
   background: black;
   mix-blend-mode: normal;
   border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
-  padding: 10px;
+  padding: 15px;
   font-size: 20px;
   font-weight: 200;
+}
+
+#Starlist-Subtitle{
+  font-weight: 400;
+  position: relative;
+  bottom: 20px;  
 }
 
 .Stars2{
@@ -535,9 +204,9 @@ input{
 
   position: absolute;
   width: 770px;
-  height: 442px;
-  left: 529px;
-  top: 156px;
+  height: 452px;
+  left: 539px;
+  top: 73px;
   
   background: black;
   mix-blend-mode: normal;
@@ -560,9 +229,9 @@ input{
 
   position: absolute;
   width: 770px;
-  height: 300px;
-  left: 529px;
-  top: 641px;
+  height: 340px;
+  left: 539px;
+  top: 568px;
   
   background: black;
   mix-blend-mode: normal;
@@ -577,101 +246,5 @@ input{
   font-weight: 400;
   position: relative;
   bottom: 20px;  
-}
-
-footer {
-  display: block;
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  padding: 0px;
-  width: 100%;
-  height: 20%;
-  background-color: black;
-  color: white;
-  opacity: 0.9;
-  overflow: auto;
-  font-size: 25px;
-}
-
-
-div.column{
-  padding-top: 1.5%;
-  float: left;
-  width: 33%;
-}
-
-div.column h3{
-  text-align: center;
-}
-
-div.Footerlist p, li{
-  text-align: center;
-}
-
-#copyright{
-  float: left;
-  clear: left;
-  overflow: auto;
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  bottom: 0;
-  font-size: 15px;
-}
-
-div.Footerlist a::after {
-  content: '';
-  position: relative;
-  left: 0px;
-  bottom: -5px;
-  display: block;
-  height: 2px;
-  width: 0%;
-  background: white;
-  transition: 0.5s;
-  margin: auto;
-}
-
-div.Footerlist a:hover::after {
-  width: 100%;
-}
-
-
-div.Footerlist a, li{
-  text-decoration: none;
-  font-size: 15px;
-  padding: 5px;
-  transition: 1s;
-}
-
-#contributors h3, li{
-  padding: 10px 0px 0px 0px;
-  
-}
-
-div.Footerlist a:hover{
-  font-size: 20px;
-  transition: 1s;
-  font-weight: bolder;
-}
-
-div.Footerlist li:hover{
-  font-size: 20px;
-  transition: 1s;
-  font-weight: bolder;
-}
-
-.Footerlist li{
-  transition: 1s;
-  list-style-type: none;
-  padding: 5px;
-  position: relative;
-  right: 20px;
-}
-
-footer a{
-  color: white;
-  padding: 0px 0px 5px 5px;
 }
 
