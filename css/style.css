@@ -7,11 +7,12 @@
 }
 
 html, body {
-  height: 187.5vh;
+  height: 200vh;
   width: 100%;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  max-zoom: 110%;
 }
 
 body {
@@ -153,6 +154,7 @@ body {
   visibility: hidden;
   width: 200px;
   overflow: visible;
+  margin-top: 10px;
 }
 
 
@@ -175,7 +177,6 @@ body {
   background: black;
   color: white;
   font-size: 15px;
-  margin-left: -5px;
   position: relative;
   display: inline;
   border: none;
@@ -202,6 +203,7 @@ body {
   transition: 1s;
   visibility: hidden;
   width: 200px;
+  margin-top: 10px;
 }
 
 .arrow2:focus + .drpd-m2 {
@@ -223,7 +225,6 @@ body {
   background: black;
   color: white;
   font-size: 15px;
-  margin-left: -5px;
   position: relative;
   display:inline;
   border: none;
@@ -248,6 +249,7 @@ body {
   transition: 1s;
   visibility: hidden;
   width: 225px;
+  margin-top: 10px;
 }
 
 .arrow3:focus + .drpd-m3 {
@@ -269,7 +271,6 @@ body {
   background: black;
   color: white;
   font-size: 15px;
-  margin-left: -5px;
   position: relative;
   display:inline;
   border: none;
@@ -294,6 +295,7 @@ body {
   transition: 1s;
   visibility: hidden;
   width: 200px;
+  margin-top: 10px;
 }
 
 .arrow4:focus + .drpd-m4 {
@@ -315,7 +317,6 @@ body {
   background: black;
   color: white;
   font-size: 15px;
-  margin-left: -5px;
   position: relative;
   display:inline;
   border: none;
@@ -340,6 +341,7 @@ body {
   transition: 1s;
   visibility: hidden;
   width: 200px;
+  margin-top: 10px;
 }
 
 .arrow5:focus + .drpd-m5 {
@@ -361,7 +363,6 @@ body {
   background: black;
   color: white;
   font-size: 15px;
-  margin-left: -5px;
   position: relative;
   display:inline;
   border: none;
@@ -405,6 +406,11 @@ body {
   height: 72.5%;
   position: relative;
   overflow: auto;
+}
+
+ .body-links{
+  font-size: 15px;
+  display: inline;
 }
 
 #Breadcrumbs {
@@ -496,7 +502,7 @@ input{
 
 footer {
   display: block;
-  position: absolute;
+  position: relative;
   left: 0px;
   bottom: 0px;
   padding: 0px;
@@ -513,6 +519,7 @@ div.column{
   padding-top: 1.5%;
   float: left;
   width: 33%;
+  height: 90%;
 }
 
 div.column h3{
@@ -528,13 +535,10 @@ div.FooterlistSocials p{
 }
 
 #copyright{
-  float: left;
-  clear: left;
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  bottom: 0px;
+  clear: both;
+  text-align: left;
   font-size: 15px;
+  height: 10%;
 }
 
 div.Footerlist a::after {
@@ -569,8 +573,8 @@ div.FooterlistSocials a{
   transition: 1s;
 }
 
-#contributors h3, li{
-  padding: 10px 0px 0px 0px;
+#contributors ul{
+  width: 100%;
 }
 
 div.Footerlist a:hover{
@@ -590,12 +594,11 @@ div.FooterlistSocials a:hover{
   font-weight: bolder;
 }
 
-.Footerlist li{
+.Footerlist ul{
   transition: 1s;
   list-style-type: none;
   padding: 5px;
   position: relative;
-  right: 20px;
 }
 
 footer a{
