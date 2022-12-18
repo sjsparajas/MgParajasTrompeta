@@ -1,15 +1,40 @@
+#Main-Content{
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#Left-Content{
+  flex-basis: 40%;
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 3%;
+  justify-content: space-around;
+}
+
+#Right-Content{
+  flex-basis: 50%;
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 4%; 
+  justify-content: space-around;
+}
+
 .h1{
   font-weight: 900;
+  font-size: ;
 }
 
 .aboutus {
   box-sizing: border-box;
 
-  position: absolute;
-  width: 503px;
-  height: 380fr;
-  left: 39px;
-  top: 549px;
+  position: relative;
+  width: 100%;
+  height: 37.5%;
 
   background: black;
   mix-blend-mode: normal;
@@ -18,18 +43,19 @@
   border-radius: 26px;
   padding: 15px;
 
-  font-size: 20px;
   text-align: justify;
+}
+
+.aboutus p{
+  font-size: 2.8vh;
 }
 
 .astrinity {
   box-sizing: border-box;
 
-  position: absolute;
-  width: 750px;
-  height: 365px;
-  left: 565px;
-  top: 74px;
+  position: relative;
+  width: 100%;
+  height: 40%;
 
   background: black;
   mix-blend-mode: normal;
@@ -38,18 +64,16 @@
   border-radius: 26px;
   padding: 15px;
 
-  font-size: 20px;
+  font-size: 2.8vh;
   text-align: justify;
 }
 
 .astropedia {
   box-sizing: border-box;
 
-  position: absolute;
-  width: 750px;
-  height: 274px;
-  left: 565px;
-  top: 462px;
+  position: relative;
+  width: 100%;
+  height: 30%;
 
   background: black;
   mix-blend-mode: normal;
@@ -58,7 +82,7 @@
   border-radius: 26px;
   padding: 15px;
 
-  font-size: 20px;
+  font-size: 2.8vh;
   text-align: justify;
 }
 
@@ -71,11 +95,9 @@
 .socials {
   box-sizing: border-box;
 
-  position: absolute;
-  width: 750px;
-  height: 165px;
-  left: 565px;
-  top: 757px;
+  position: relative;
+  width: 100%;
+  height: 20%;
 
   background: black;
   mix-blend-mode: normal;
@@ -86,6 +108,7 @@
 }
 
 .socials i{
+  position: relative;
   font-size: 45px;
   transition: 1s;
 }
@@ -98,22 +121,50 @@
 .socials a{
   float: left;
   width: 25%;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 0px 0px 0px;
   text-align: center;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;   
+  align-items: center;
 }
 
+#Main-socials{
+  display: inline-flex;
+  align-items: center;
+  justify-content:space-between ;
+  flex-wrap: nowrap;
+}
+
+#Facebook1{
+	background: url('../images/Social-Media.png') no-repeat -617px -16px;
+	width: 25px;
+	height: 25px;
+}
+
+#Facebook2{
+	background: url('../images/Social-Media.png') no-repeat -618px -16px;
+	width: 25px;
+	height: 25px;
+}
+
+
+#Twitter{
+	background: url('../images/Social-Media.png') no-repeat -60px -13px;
+	width: 29px;
+  height: 30px;
+}
 .socials p{
   display: inline;
+  float: left;
   position: relative;
-  top: -10px;
+  top: -8px;
 }
 
 .border1 {
-  position: absolute;
-  width: 470px;
-  height: 85px;
-  left: 34px;
-  top: 69.5px;
+  position: relative;
+  width: 90%;
+  height: 10%;
   margin-top: 10px;
 
   background: black;
@@ -123,7 +174,7 @@
   border-radius: 26px;
   text-align: center;
   padding: 0;
-  font-size: 20px;
+  font-size: 2.8vh;
   font-weight: 200;
   transition: 1s;
 }
@@ -141,11 +192,9 @@
 }
 
 .border2 {
-  position: absolute;
-  width: 470px;
-  height: 90px;
-  left: 34px;
-  top: 191.5px;
+  position: relative;
+  width: 90%;
+  height: 10%;
 
   background: black;
   mix-blend-mode: normal;
@@ -154,7 +203,7 @@
   border-radius: 26px;
   text-align: center;
   padding: 0;
-  font-size: 20px;
+  font-size: 2.8vh;
   font-weight: 200;
   transition: 1s;
 }
@@ -172,11 +221,9 @@
 }
 
 .border3 {
-  position: absolute;
-  width: 470px;
-  height: 90px;
-  left: 34px;
-  top: 310.5px;
+  position: relative;
+  width: 90%;
+  height: 10%;
 
   background: black;
   mix-blend-mode: normal;
@@ -185,7 +232,7 @@
   border-radius: 26px;
   text-align: center;
   padding: 0;
-  font-size: 20px;
+  font-size: 2.8vh;
   font-weight: 200;
   transition: 1s;
 }
@@ -203,11 +250,9 @@
 }
 
 .border4 {
-  position: absolute;
-  width: 470px;
-  height: 90px;
-  left: 34px;
-  top: 432.5px;
+  position: relative;
+  width: 90%;
+  height: 10%;
 
   background: black;
   mix-blend-mode: normal;
@@ -216,7 +261,7 @@
   border-radius: 26px;
   text-align: center;
   padding: 0;
-  font-size: 20px;
+  font-size: 2.8vh;
   font-weight: 200;
   transition: 1s;
 }
@@ -232,3 +277,127 @@
   color: black;
   transition: ease-in-out 1s;
 }
+
+@media only screen and (max-width: 1275px){
+  .Content p{
+    font-size: 2.6vh;
+  }
+
+  .Content h1{
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .Content p{
+    font-size: 2.4vh;
+  }
+
+  .Content h1{
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 918px){
+  .Content p{
+    font-size: 2.3vh;
+  }
+
+  .Content h1{
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 830px){
+  .Content p{
+    font-size: 2.2vh;
+  }
+
+  .Content h1{
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .Content p{
+    font-size: 2.1vh;
+  }
+
+  .Content h1{
+    font-size: 26px;
+  }
+
+}
+
+@media only screen and (max-width: 623px){
+  #Main-Content{
+  flex-direction: column-reverse;
+  }
+
+  #Left-Content{
+    flex: 80%;
+  }
+
+  #Right-Content{
+    flex: 20%;
+  }
+  
+  .Content a{
+    display: none;
+  }
+
+  .socials a{
+    display: inline-block;
+  }
+
+  .aboutus{
+    height: 90%;
+  }
+}
+
+
+/*
+  @media only screen and (max-height: 300px){
+  .Content p{
+    font-size: 2.3vh ;
+  }
+}
+
+@media only screen and (max-height: 400px){
+  .Content p{
+    font-size: 2.4vh;
+  }
+}
+
+@media only screen and (min-height: 600px){
+  .Content p{
+    font-size: 2.6vh ;
+  }
+}
+
+@media only screen and (min-height: 700px){
+  .Content p{
+    font-size: 2.5vh ;
+  }
+}
+
+@media only screen and (min-height: 800px){
+  .Content p{
+    font-size: 2.4v;
+  }
+}
+
+@media only screen and (min-height: 900px){
+  .Content p{
+    font-size: 2.2vh;
+  }
+
+}
+
+@media only screen and (min-height: 1000px){
+  .Content p{
+    font-size: 2.1vh;
+  }
+
+}
+*/
