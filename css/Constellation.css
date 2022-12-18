@@ -1,0 +1,369 @@
+
+html, body{
+  height: 270vh !important;
+}
+
+.h1{
+  font-weight: 900;
+}
+
+.Content h4{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.Asterisms {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 479px;
+  height: 97px;
+  left: 34px;
+  top: 73px;
+  
+  background: black;
+  mix-blend-mode: normal;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  transition: 1s;
+}
+
+.Asterisms:hover{
+  transform: scale(1.05);
+  transition: 1s;
+  border: 3px solid black;
+  background: white;
+}
+
+.Asterisms:hover p{
+  color: black;
+  transition: ease-in-out 1s;
+}
+
+.Origins {
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 479px;
+  height: 97px;
+  left: 34px;
+  top: 197px;
+  
+  background: black;
+  mix-blend-mode: normal;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  transition: 1s;
+}
+
+.Origins:hover{
+  transform: scale(1.05);
+  transition: 1s;
+  border: 3px solid black;
+  background: white;
+}
+
+.Origins:hover p{
+  color: black;
+  transition: ease-in-out 1s;
+}
+
+.Zodiacs{
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 479px;
+  height: 97px;
+  left: 34px;
+  top: 324px;
+  
+  background: black;
+  mix-blend-mode: normal;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  transition: 1s;
+}
+
+.Zodiacs:hover{
+  transform: scale(1.05);
+  transition: 1s;
+  border: 3px solid black;
+  background: white;
+}
+
+.Zodiacs:hover p{
+  color: black;
+  transition: ease-in-out 1s;
+}
+
+.HDTW-C{
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 479px;
+  height: 97px;
+  left: 34px;
+  top: 448px;
+  
+  background: black;
+  mix-blend-mode: normal;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  transition: 1s;
+}
+
+.HDTW-C:hover{
+  transform: scale(1.05);
+  transition: 1s;
+  border: 3px solid black;
+  background: white;
+}
+
+.HDTW-C:hover p{
+  color: black;
+  transition: ease-in-out 1s;
+}
+
+.HTFD{
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 479px;
+  height: 97px;
+  left: 34px;
+  top: 577px;
+  
+  background: black;
+  mix-blend-mode: normal;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  transition: 1s;
+}
+
+.HTFD:hover{
+  transform: scale(1.05);
+  transition: 1s;
+  border: 3px solid black;
+  background: white;
+}
+
+.HTFD:hover p{
+  color: black;
+  transition: ease-in-out 1s;
+}
+
+.Constellist{
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 479px;
+  height: 207px;
+  left: 34px;
+  top: 707px;
+  
+  background: black;
+  mix-blend-mode: normal;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.Constellist {
+  display: inline-block !important;
+}
+
+.ConstellationsMain{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 770px;
+  height: 462px;
+  left: 539px;
+  top: 73px;
+  
+  background: black;
+  mix-blend-mode: normal;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 15px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+#Constellations-Subtitle{
+  font-weight: 400;
+  position: relative;
+  bottom: 20px;  
+}
+
+.astropedia4{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 770px;
+  height: 340px;
+  left: 539px;
+  top: 568px;
+  
+  background: black;
+  mix-blend-mode: normal;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+#astropedia4-Subtitle{
+  font-weight: 400;
+  position: relative;
+  bottom: 20px;  
+}
+
+#Zodiacs{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 1250px;
+  height: 400px;
+  left: 43px;
+  top: 925px;
+  
+  background: black;
+  mix-blend-mode: normal;
+  border: 1px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+#Main-Zodiac{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Main-Zodiac a:hover{
+  filter: brightness(20%);
+}
+
+#Top-Zodiac{
+  flex-basis: 50%;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#Bottom-Zodiac{
+  flex-basis: 50%;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#sprite1{
+  background: url('../images/Zodiac.png') no-repeat -24px -9px;
+	width: 80px;
+	height: 103px;
+}
+
+#sprite2{
+  background: url('../images/Zodiac.png') no-repeat -144px -16px;
+	width: 88px;
+	height: 96px;
+}
+
+#sprite3{
+  background: url('../images/Zodiac.png') no-repeat -272px -16px;
+	width: 72px;
+	height: 96px;
+}
+
+#sprite4{
+  background: url('../images/Zodiac.png') no-repeat -376px -24px;
+	width: 88px;
+	height: 88px;
+}
+
+#sprite5{
+  background: url('../images/Zodiac.png') no-repeat -29px -192px;
+	width: 83px;
+	height: 76px;
+}
+
+#sprite6{
+  background: url('../images/Zodiac.png') no-repeat -152px -192px;
+	width: 80px;
+	height: 80px;
+}
+
+#sprite7{
+  background: url('../images/Zodiac.png') no-repeat -264px -200px;
+	width: 88px;
+	height: 71px;
+}
+
+#sprite8{
+  background: url('../images/Zodiac.png') no-repeat -382px -200px;
+	width: 90px;
+	height: 67px;
+}
+
+#sprite9{
+  background: url('../images/Zodiac.png') no-repeat -24px -352px;
+	width: 88px;
+	height: 72px;
+}
+
+
+#sprite10{
+  background: url('../images/Zodiac.png') no-repeat -152px -352px;
+	width: 80px;
+	height: 72px;
+}
+
+#sprite11{
+  background: url('../images/Zodiac.png') no-repeat -264px -333px;
+	width: 88px;
+	height: 91px;
+}
+
+#sprite12{
+  background: url('../images/Zodiac.png') no-repeat -381px -336px;
+	width: 83px;
+	height: 88px;
+}
