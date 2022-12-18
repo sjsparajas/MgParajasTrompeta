@@ -193,6 +193,10 @@
   font-weight: 200;
 }
 
+.Starlist {
+  display: inline-block !important;
+}
+
 #Starlist-Subtitle{
   font-weight: 400;
   position: relative;
