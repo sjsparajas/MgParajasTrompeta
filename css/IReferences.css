@@ -6,8 +6,9 @@
   text-align: justify;
 }
 
- .body-links a{
-  text-align: justify;
+ .body-links{
+  font-size: 15px !important;
+  display: inline !important;
 }
 
 .IReferences {
@@ -15,7 +16,7 @@
   
   position: absolute;
   width: 550px;
-  height: 280px;
+  height: 320px;
   left: 34px;
   top: 69.5px;
   
