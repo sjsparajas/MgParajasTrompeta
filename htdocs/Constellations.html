@@ -11,19 +11,23 @@
     <meta http-equiv="X-UA-Comptible" content="IE=edge">
     <link href="../images/AstrinityLogo-updated.ico" rel="icon" type="image/ico" />
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/Constellation.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="../script.js"></script>
   </head>
 
 
   <body>
     <div id="flexbox">
       <div class="navlinks">
-        <img id=logo src="../images/Logo.png" alt="Logo " width="350">
-        <div class="navbuttons">
-          <ul>
-            <li id="navlinks1">
-              <a class="navbutton" href="../index.html">Home</a>
-              <button class="arrow1"><i class="fa fa-angle-right"></i></button>
+        <div id=logo>
+          <img src="../images/Logo.png" alt="Logo " width="350">
+          <a id="navlink-all" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <ul class="navbuttons" id="navbuttons">
+          <li id="navlinks1" >
+            <a class="navbutton" href="../index.html">Home</a>
+            <button class="arrow1" ><i class="fa fa-angle-right"></i></button>
               <div class="drpd-m1">
                 <p>
                   <a href="../htdocs/Solar System.html">Solar System</a>
@@ -32,10 +36,10 @@
                   <a href="../htdocs/Galaxies.html">Galaxies</a>
                 </p>
               </div>
-            </li>
-            <li id="navlinks2">
-              <a class="navbutton" href="../htdocs/Solar System.html">Solar System</a>
-              <button class="arrow2"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </li>
+          <li id="navlinks2">
+            <a class="navbutton" href="../htdocs/Solar System.html">Solar System</a>
+            <button class="arrow2"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
               <div class="drpd-m2">
                 <p>
                   <a href="">The Sun</a>
@@ -47,10 +51,10 @@
                   <a href="">SpaceCraft</a>
                 </p>
               </div>
-            </li>
-            <li id="navlinks3">
-              <a class="navbutton" href="../htdocs/Stars.html">Stars</a>
-              <button class="arrow3"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </li>
+          <li id="navlinks3">
+            <a class="navbutton" href="../htdocs/Stars.html">Stars</a>
+            <button class="arrow3"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
               <div class="drpd-m3">
                 <p>
                   <a href="">Our Star</a>
@@ -60,10 +64,10 @@
                   <a href="">Hall of Stars</a>
                 </p>
               </div>
-            </li>
-            <li id="navlinks4">
-              <a class="navbutton" href="../htdocs/Constellations.html">Constellations</a>
-              <button class="arrow4"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </li>
+          <li id="navlinks4">
+            <a class="navbutton" href="../htdocs/Constellations.html">Constellations</a>
+            <button class="arrow4"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
               <div class="drpd-m4">
                 <p>
                   <a href="">Constellations</a>
@@ -71,10 +75,10 @@
                   <a href="">Constellations</a>
                 </p>
               </div>
-            </li>
-            <li id="navlinks5">
-              <a class="navbutton" href="../htdocs/Galaxies.html">Galaxies</a>
-              <button class="arrow5"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </li>
+          <li id="navlinks5">
+            <a class="navbutton" href="../htdocs/Galaxies.html">Galaxies</a>
+            <button class="arrow5"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
               <div class="drpd-m5">
                 <p>
                   <a href="">Galaxies</a>
@@ -82,21 +86,91 @@
                   <a href="">Galaxies</a>
                 </p>
               </div>
-            </li>
-          </ul>
-        </div>
+          </li>
+        </ul>
       </div>
 
+
       <div class="Content">
-        <div id="Breadcrumbs">
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../htdocs/Constellations.html">Constellations</a></li>
-          </ul>
-        </div>
+        <div id="Top-Content">
+          <div id="Breadcrumbs">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../htdocs/Constellations.html">Constellations</a></li>
+            </ul>
+          </div>
       
-        <div class="search">
-          <input type="text" placeholder="Search...">
+          <div class="search">
+            <input type="text" placeholder="Search...">
+          </div>
+        </div>
+
+        <div id="Main-Content">
+          <span class="Asterisms">
+            <p>Asterisms</p>
+          </span>
+        
+          <span class="Origins">
+            <p>Origins</p>
+          </span>
+        
+          <span class="Zodiacs">
+            <p>Zodiacs</p>
+          </span>
+        
+          <span class="HDTW-C">
+            <p>How Do They Work</p>
+          </span>
+        
+          <span class="HTFD">
+              <p>How To Find Them</p>
+          </span>
+        
+          <span class="Constellist">
+            <h4>Constellist</h4>
+            <p>The Encyclopedia of all Constellations</p>
+          </span>
+      
+          <div class="  ConstellationsMain">
+            <p>
+              <h1>Constellations</h1>
+              <p id="Constellations-Subtitle">The Paintings of the Night Sky</p>
+              <hr>
+              <p>Throughout history many people have always been seeing patterns in the night sky and the same people thought and thought what these patterns could mean. All of these patterns then developed into the 88 modern constellations we now know today; some great examples are the Ursa Major, Orion, and Cassiopeia. These patterns weren’t just used as things to see but in the era of exploration it was used as a tool of navigation that helped many sailors along the way. The Greeks thought that many of these constellations were connected to the many gods, demi-gods and important beings in their rich mythology and named them. Since constellations were spread throughout the whole celestial sphere we can’t see all of them at once.</p>
+              <hr>
+          </div>
+          
+          <div class="astropedia4">
+            <p>
+              <h1>Astropedia</h1>
+              <p id="1stropedia4-Subtitle">Encyclopedia of the All Astronomy</p>
+              <hr>
+              <p>This is a database of all our celestial bodies and their own different values. This where we place all of the stars, planets and galaxies.</p>
+              <hr>
+            </p>
+          </div>
+
+          <div id="Zodiacs">
+            <h1>Meet The Zodiacs</h1>
+            <div id="Main-Zodiac">
+              <div id="Top-Zodiac">
+                <a href="#"><span id="sprite1"></span>Aquarius</a>
+                <a href="#"><span id="sprite2"></span>Pisces</a>
+                <a href="#"><span id="sprite3"></span>Aries</a>
+                <a href="#"><span id="sprite4"></span>Taurus</a>
+                <a href="#"><span id="sprite5"></span>Gemini</a>
+                <a href="#"><span id="sprite6"></span>Cancer</a>
+              </div>
+              <div id="Bottom-Zodiac">
+                <a href="#"><span id="sprite7"></span>Leo</a>
+                <a href="#"><span id="sprite8"></span>Virgo</a>
+                <a href="#"><span id="sprite9"></span>Libra</a>
+                <a href="#"><span id="sprite10"></span>Scorpio</a>
+                <a href="#"><span id="sprite11"></span>Sagittarius</a>
+                <a href="#"><span id="sprite12"></span>Capricorn</a>
+              </div>
+            </div>
+          </div> 
         </div>
       </div>
       
@@ -139,7 +213,7 @@
           </div>
             
         </div>
-        <p id="copyright"> &copy 9-Magnesium Parajas-Trompeta</p>
+        <div id="copyright"><p> &copy 9-Magnesium Parajas-Trompeta</p></div>
       </footer>
     </div>
   </body>
