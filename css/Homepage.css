@@ -129,30 +129,35 @@
   align-items: center;
 }
 
-#Main-socials{
+#Main-Socials{
+  width: 100%;
   display: inline-flex;
   align-items: center;
-  justify-content:space-between ;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
 }
 
+#Main-Socials a:hover{
+  filter: brightness(20%);
+}
+
+
 #Facebook1{
-	background: url('../images/Social-Media.png') no-repeat -617px -16px;
-	width: 25px;
-	height: 25px;
+	background: url('../images/Social-Media-Icons.png') no-repeat -39px -32px;
+	width: 81px;
+	height: 80px;
 }
 
 #Facebook2{
-	background: url('../images/Social-Media.png') no-repeat -618px -16px;
-	width: 25px;
-	height: 25px;
+	background: url('../images/Social-Media-Icons.png') no-repeat -39px -32px;
+	width: 81px;
+	height: 80px;
 }
 
-
 #Twitter{
-	background: url('../images/Social-Media.png') no-repeat -60px -13px;
-	width: 29px;
-  height: 30px;
+	background: url('../images/Social-Media-Icons.png') no-repeat -266px -32px;
+	width: 81px;
+	height: 80px;
 }
 .socials p{
   display: inline;
