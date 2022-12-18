@@ -12,7 +12,7 @@ html, body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  max-zoom: 110%;
+  -webkit-text-size-adjust: none;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
   background-position: center;
   background-size: cover;
   background-color: black;
-}
+} 
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -55,31 +55,25 @@ body {
   overflow: hidden;
 }
 
-.navlinks {
-  position: relative;
+.navlinks{
   display: flex;
-  align-items: center;
-  background: black;
+  height: fit-content;
   margin: 0;
-  color: white;
-  text-align: center;
-  height: 7.5%;
-  width: 100%;
+  padding: 1% 0;
+  flex-wrap: nowrap;
+  white-space: nowrap; 
+  background-color: black;
+  align-items: center;
 }
 
-.navlinks img{
-  float: left;
-  width: 25%;
-}
 
 .navbuttons{
-  display: inline;
-  position: relative;
-  float: left;
-  width: 70%;
-  padding: 0px;
-  margin: 0px;
+  flex-basis: 75%;
+  display: flex;
+  padding: 0;
+  align-items: center;
 }
+
 
 .navbutton{
   padding: 0px;
@@ -91,44 +85,90 @@ body {
   margin: 0px;
 }
 
-.navbuttons li{
-  float: left;
-}
-
 .navbuttons li a, button{
   text-align: center;
 }
 
-#navlinks1{
-  position: relative;
-  width: 18%;
-  float: left;
+#logo{
+  width: 25%;
+  height: 100%;
+  background-color: black;
 }
 
-#navlinks2{
+#logo img{
+  width: 100%;
+}
+
+
+#navlinks1{
+  display: inline;
+  flex-basis: 20%;
   position: relative;
-  width: 23%;
   float: left;
+  margin: 0px;
+  height: fit-content;
+  background-color: black;
+  flex-wrap: wrap;
+}
+
+
+#navlinks2{
+  display: inline;
+  flex-basis: 20%;
+  position: relative;
+  float: left;
+  margin: 0px;
+  height: fit-content;
+  background-color: black;
+  flex-wrap: wrap;
 }
 
 #navlinks3{
+  display: inline;
+  flex-basis: 20%;
   position: relative;
-  width: 18%;
   float: left;
+  margin: 0px;
+  height: fit-content;
+  background-color: black;
+  flex-wrap: wrap;
+  white-space: nowrap; 
 }
 
 #navlinks4{
+  display: inline;
+  flex-basis: 20%;
   position: relative;
-  width: 23%;
   float: left;
+  margin: 0px;
+  height: fit-content;
+  background-color: black;
+  flex-wrap: wrap;
+  white-space: nowrap; 
 }
 
 #navlinks5{
+  display: inline;
+  flex-basis: 20%;
   position: relative;
-  width: 18%;
   float: left;
+  margin: 0px;
+  height: fit-content;
+  background-color: black;
+  flex-wrap: wrap;
+  white-space: nowrap; 
 }
-.navbuttons li, a {
+
+#navlink-all{
+  display: none;
+}
+
+#close-button{
+  display: none;
+}
+
+
+.navbuttons li, .navbuttons a{
   list-style-type: none;
   display: inline-block;
   padding: 8px;
@@ -139,13 +179,11 @@ body {
   font-size: 18.5px;
 }
 
-
-
 .drpd-m1{
   position: absolute;
   background: black;
   color: white;
-  z-index: 1;
+  z-index: 4;
   border: 1px solid white;
   border-radius: 15px;
   padding: 0px 15px; 
@@ -155,6 +193,12 @@ body {
   width: 200px;
   overflow: visible;
   margin-top: 10px;
+  white-space: normal;
+}
+
+.drpd-m1 p{
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -172,6 +216,7 @@ body {
   transition-timing-function: ease-in-out;
 }
 
+
 .arrow1{
   transition: transform 0.5s;
   background: black;
@@ -187,7 +232,6 @@ body {
   color: black;
   background-color: white;
   border-radius: 10px;
-  width: 150px;
 }
 
 
@@ -195,7 +239,7 @@ body {
   position: absolute;
   background: black;
   color: white;
-  z-index: 1;
+  z-index: 4;
   border: 1px solid white;
   border-radius: 15px;
   padding: 0px 15px; 
@@ -204,6 +248,12 @@ body {
   visibility: hidden;
   width: 200px;
   margin-top: 10px;
+  white-space: normal;
+}
+
+.drpd-m2 p{
+  display: flex;
+  flex-direction: column;
 }
 
 .arrow2:focus + .drpd-m2 {
@@ -234,14 +284,13 @@ body {
   color: black;
   background-color: white;
   border-radius: 10px;
-  width: 150px;
 }
 
 .drpd-m3{
   position: absolute;
   background: black;
   color: white;
-  z-index: 1;
+  z-index: 4;
   border: 1px solid white;
   border-radius: 15px;
   padding: 0px 15px; 
@@ -250,6 +299,12 @@ body {
   visibility: hidden;
   width: 225px;
   margin-top: 10px;
+  white-space: normal;
+}
+
+.drpd-m3 p{
+  display: flex;
+  flex-direction: column;
 }
 
 .arrow3:focus + .drpd-m3 {
@@ -280,14 +335,13 @@ body {
   color: black;
   background-color: white;
   border-radius: 10px;
-  width: 170px;
 }
 
 .drpd-m4{
   position: absolute;
   background: black;
   color: white;
-  z-index: 1;
+  z-index: 4;
   border: 1px solid white;
   border-radius: 15px;
   padding: 0px 15px; 
@@ -296,6 +350,12 @@ body {
   visibility: hidden;
   width: 200px;
   margin-top: 10px;
+  white-space: normal;
+}
+
+.drpd-m4 p{
+  display: flex;
+  flex-direction: column;
 }
 
 .arrow4:focus + .drpd-m4 {
@@ -326,14 +386,13 @@ body {
   color: black;
   background-color: white;
   border-radius: 10px;
-  width: 150px;
 }
 
 .drpd-m5{
   position: absolute;
   background: black;
   color: white;
-  z-index: 1;
+  z-index: 4;
   border: 1px solid white;
   border-radius: 15px;
   padding: 0px 15px; 
@@ -342,6 +401,13 @@ body {
   visibility: hidden;
   width: 200px;
   margin-top: 10px;
+  white-space: normal;
+  right: 1%;
+}
+
+.drpd-m5 p{
+  display: flex;
+  flex-direction: column;
 }
 
 .arrow5:focus + .drpd-m5 {
@@ -372,10 +438,11 @@ body {
   color: black;
   background-color: white;
   border-radius: 10px;
-  width: 150px;
 }
 
-.navlinks ul li a.navbutton::after {
+
+
+.navlinks li a.navbutton::after {
   content: '';
   position: relative;
   bottom: -5px;
@@ -387,7 +454,7 @@ body {
   margin: auto;
 }
 
-.navlinks ul li a.navbutton:hover::after {
+.navlinks li a.navbutton:hover::after {
   width: 100%;
 }
 
@@ -402,32 +469,56 @@ body {
 }
 
 .Content{
-  width: 100%;
+  width: 100vw;
   height: 72.5%;
   position: relative;
   overflow: auto;
 }
 
- .body-links{
-  font-size: 15px;
-  display: inline;
+.Content a{
+  list-style-type: none;
+  display: flex;
+  padding: 8px;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 18.5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Content span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#Top-Content{
+  display: flex;
+  width: 100%;
+  height: 5%;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #Breadcrumbs {
   box-sizing: border-box;
 
-  position: absolute;
-  width: 700px;
-  height: 40px;
-  left: 34px;
+  position: relative;
+  flex-basis: 55%;
+  height: 80%;
   top: 0px;
   margin-top: 10px;
+  margin-left: 3%;
 
   background: black;
   mix-blend-mode: normal;
   border: 1px solid white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px;
+  
 }
 
 div#Breadcrumbs ul li{
@@ -451,7 +542,7 @@ div#Breadcrumbs li+li:before {
   bottom: 1px;
 }
 
-  div#Breadcrumbs ul li a::after {
+div#Breadcrumbs ul li a::after {
   content: '';
   position: relative;
   bottom: -1px;
@@ -468,6 +559,13 @@ div#Breadcrumbs ul li a:hover::after {
 }
 
 div#Breadcrumbs a {
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 18.5px;
   transition: 1s;
 }
 
@@ -478,16 +576,20 @@ div#Breadcrumbs a:hover {
   color:#E1D9D1;
 }
 
+.search{
+  display:flex;
+  flex-basis: 35%;
+  height: 80%;
+  margin-top: 10px;
+margin-right: 4%;
+}
 
 input{
   box-sizing: border-box;
 
-  position: absolute;
-  width: 500px;
-  height: 35px;
-  left: 800px;
-  top: 4px;
-  margin-top: 10px;
+  position: relative;
+  width: 100%;
+  height: 100%;
 
   background: black;
   mix-blend-mode: normal;
@@ -501,25 +603,25 @@ input{
 }
 
 footer {
-  display: block;
-  position: relative;
-  left: 0px;
-  bottom: 0px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  position: absolute;
   padding: 0px;
   width: 100%;
   height: 20%;
   background-color: black;
-  color: white;
   overflow: auto;
+  color: white;
   font-size: 25px;
+  bottom: 0;
 }
 
 
 div.column{
+  flex: 1;
   padding-top: 1.5%;
   float: left;
-  width: 33%;
-  height: 90%;
+  height: fit-content;
 }
 
 div.column h3{
@@ -535,10 +637,19 @@ div.FooterlistSocials p{
 }
 
 #copyright{
-  clear: both;
+  position: static;
+  flex-basis: 100%;
   text-align: left;
   font-size: 15px;
   height: 10%;
+  z-index: 1;
+  white-space: nowrap;
+  bottom: 0;
+}
+
+
+#copyright p{
+  margin: 0;
 }
 
 div.Footerlist a::after {
@@ -602,7 +713,340 @@ div.FooterlistSocials a:hover{
 }
 
 footer a{
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px;
+  margin: 0;
   color: white;
-  padding: 0px 0px 5px 5px;
+  text-decoration: none;
+  position: relative;
 }
 
+
+
+@media only screen and (min-width: 2000px){
+  .navbuttons li, .nvabuttons a {
+    font-size: 27.5px;
+  }
+    
+  footer li{
+    font-size: 27.5px;
+  }
+  
+  div.Footerlist ul li:hover{
+    font-size: 35.5px;
+  }
+  
+  .Footerlist p a{
+    font-size: 27.5px;
+  }
+
+  .Footerlist p a:hover{
+      font-size: 35.5px;
+  }
+  
+  footer h3{
+    font-size: 50px;
+  }
+
+  div.FooterlistSocials a{
+    font-size: 40px;
+  }
+
+  #copyright{
+    font-size: 25px
+  }
+}
+
+@media only screen and (max-width: 1030px){
+  .navbuttons li, .navbuttons a {
+    font-size: 14px;
+  }
+
+  #logo{
+    flex-basis: 30%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbuttons{
+    flex-basis: 70%;
+  }
+
+  .navlinks a.navbutton:hover{
+    font-size: 16px;
+  }
+  
+}
+  
+@media only screen and (max-width: 830px){
+  .navlinks{
+    padding: 0;
+  }
+  
+  .navbuttons li, .navbuttons a {
+    font-size: 10.5px;
+  }
+
+  .navbuttons li button i{
+    font-size: 11px;
+  }
+
+  .navlinks a.navbutton:hover{
+    font-size: 13.5px;
+  }
+
+  .drpd-m1, .drpd-m2, .drpd-m3, .drpd-m4, .drpd-m5{
+    width: 150px;
+  }
+
+  .drpd-m1, .drpd-m2, .drpd-m3, .drpd-m4, .drpd-m5{
+    width: 150px;
+  }
+}    
+
+@media only screen and (max-width: 700px){
+
+  .navbuttons li, .navbuttons a {
+    font-size: 9px;
+  }
+
+  .navlinks a.navbutton:hover{
+    font-size: 12.5px;
+  }
+}    
+
+@media only screen and (max-width: 660px){
+  .navbuttons li, .navbuttons a {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 623px){
+  .navlinks{
+    display: inline-block;
+    background-color: transparent;
+    height: 20px;
+  }
+
+  #logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    height: fit-content;
+  }
+
+  #logo img{
+    width: 30%;
+    margin: 1% 0;
+    padding: 1% 0;
+  }
+  
+  
+  .navbuttons{
+    display: inline-flex;
+    position: absolute;
+    flex-direction: column;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    gap: 1%;
+  }
+
+  .navlinks li a.navbutton::after{
+    height: 1px;
+  }
+
+  .navbuttons li, .navbuttons a {
+    font-size: 12px;
+  }
+  
+  #navlinks1, #navlinks2, #navlinks3, #navlinks4, #navlinks5{
+    flex-basis: 2%;
+    width: fit-content;
+    /*width: 100%;*/
+    transition: 1s;
+    padding: 0;
+  }
+
+  #navlink-all{
+    flex-basis: 5%;
+    display: inline;
+    float: right;
+    z-index: 4;
+  }
+
+  #navlink-all i{
+    font-size: 4vw;
+  }
+
+  #navlink-all a{
+    padding: 0;
+  }
+  
+  #navlinks1{
+    margin-top: 10%;
+  }
+
+  
+  /*
+  .drpd-m1{
+  position: absolute;
+  border: none;
+  border-radius: 0;
+  padding: 0px;
+  width: 40vw;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  }
+  
+  .arrow1:focus + .drpd-m1 {
+    position: static;
+    padding: 0px;
+  }
+
+  .drpd-m1 p a:hover{
+    border-radius: 0;
+  }
+
+  .drpd-m1 p a:active{
+    color: black;
+    background-color: white;
+  }
+
+  .navbuttons li, a{
+    padding: 3px;
+  }
+  
+*/
+  .drpd-m5{
+    right: auto;
+  }
+
+  footer{
+    height: 22.5%;
+  }
+  
+  footer li{
+    font-size: 11.5px;
+  }
+
+  .Footerlist ul li:hover{
+    font-size: 13px;
+  }
+  
+  .Footerlist p a{
+    font-size: 11.5px;
+  }
+
+  .Footerlist p a:hover{
+      font-size: 13px;
+  }
+
+  footer h3{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  div.column{
+    flex: 100%;
+  }
+
+  #copyright{
+    text-align: center;
+  }
+  
+  footer li{
+    font-size: 15px;
+  }
+  
+  .Footerlist li:hover{
+    font-size: 20px;
+  }
+  
+  .Footerlist p a{
+    font-size: 15px;
+  }
+
+  .Footerlist p a:hover{
+      font-size: 20px;
+  }
+  
+  footer h3{
+    font-size: 30px;
+  }
+  
+}
+@media only screen and (max-width: 400px){
+  .navbuttons li, .navbuttons a {
+    font-size: 11px;
+  }
+  
+  .navbuttons li button i{
+    font-size: 10px;
+  }
+
+  .navlinks a.navbutton:hover{
+    font-size: 12px;
+  }
+
+}
+
+@media only screen and (max-width: 300px){
+  .navbuttons li, .navbuttons a {
+    font-size: 9px;
+  }
+  
+  .navbuttons li button i{
+    font-size: 8px;
+  }
+
+  .navlinks li a.navbutton::after{
+    height: 0.5px;
+  }
+
+  .navlinks a.navbutton:hover{
+    font-size: 10px;
+  }
+  
+  #logo img{
+    flex-basis: 35%;
+  }
+
+  #navlink-all i{
+    font-size: 9px;
+  }
+
+  #copyright{
+    font-size: 11.5px
+  }
+}
+
+@media only screen and (max-width: 200px){
+  #logo img{
+    flex-basis: 45%;
+  }
+
+  #copyright{
+    font-size: 9.5px
+  }
+}
+
+@media only screen and (max-height: 200px){
+  .navbuttons{
+    gap: 10px;
+  }
+}
